@@ -1,0 +1,89 @@
+:root {
+  /* Cybersecurity theme colors */
+  --primary-blue: #0A84FF;
+  --deep-blue: #2E4AF3;
+  --cyber-purple: #8B31FF;
+  --cyber-magenta: #FF2D55;
+  --tech-cyan: #00C7BE;
+  
+  /* Backgrounds */
+  --bg-gradient-hero: linear-gradient(135deg, var(--primary-blue) 0%, var(--cyber-purple) 50%, var(--cyber-magenta) 100%);
+  --bg-gradient-main: linear-gradient(180deg, rgba(46, 74, 243, 0.1) 0%, rgba(0, 199, 190, 0.05) 100%);
+  --bg-gradient-accent: linear-gradient(90deg, var(--cyber-magenta) 0%, var(--primary-blue) 100%);
+  
+  /* Shadows */
+  --shadow-glow: 0 0 40px rgba(46, 74, 243, 0.2);
+  --shadow-card: 0 4px 20px -8px rgba(0, 0, 0, 0.1);
+  --shadow-primary: 0 10px 30px -10px rgba(10, 132, 255, 0.3);
+}
+
+/* Update component styles */
+.bg-gradient-hero {
+  background-image: var(--bg-gradient-hero);
+}
+
+.bg-gradient-earth {
+  background-image: var(--bg-gradient-main);
+}
+
+.bg-gradient-accent {
+  background-image: var(--bg-gradient-accent);
+}
+
+/* Update text colors */
+.text-earth-green {
+  color: var(--primary-blue);
+}
+
+.text-earth-teal {
+  color: var(--deep-blue);
+}
+
+.text-earth-blue {
+  color: var(--cyber-purple);
+}
+
+.text-earth-lime {
+  color: var(--cyber-magenta);
+}
+
+.text-earth-emerald {
+  color: var(--tech-cyan);
+}
+
+/* Card and component styles */
+.shadow-earth {
+  box-shadow: var(--shadow-primary);
+}
+
+.shadow-glow {
+  box-shadow: var(--shadow-glow);
+}
+
+.shadow-card {
+  box-shadow: var(--shadow-card);
+}
+
+/* Fallback classes to ensure button visibility across builds */
+button.btn-default, .btn-default {
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+button.btn-hero, .btn-hero {
+  background-image: var(--gradient-hero);
+  color: white;
+  box-shadow: var(--shadow-primary);
+}
+
+button.btn-earth, .btn-earth {
+  background-image: var(--gradient-earth);
+  color: white;
+  box-shadow: var(--shadow-card);
+}
+
+button.btn-accent, .btn-accent {
+  background-image: var(--gradient-accent);
+  color: white;
+  box-shadow: var(--shadow-card);
+}
