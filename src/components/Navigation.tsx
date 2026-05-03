@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Leaf, ChevronDown, BrainCog } from "lucide-react";
+import { Menu, X, Leaf, ChevronDown, GitCompare } from "lucide-react";
 
 
 const Navigation = () => {
@@ -9,7 +9,7 @@ const Navigation = () => {
 
   const mainNavItems = [
     { name: "Home", href: "/" },
-    { name: "HackAgentAIx Schedule", href: "/schedule" },
+    { name: "Schedule", href: "/schedule" },
     // { name: "Results", href: "/results" }
   ];
 
@@ -38,7 +38,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-gradient-hero rounded-lg flex items-center justify-center">
-              <BrainCog className="w-5 h-5 text-white" />
+              <GitCompare className="w-5 h-5 text-white" />
             </div>
             <span className="text-xl font-bold text-foreground">
               HackAgentAIx

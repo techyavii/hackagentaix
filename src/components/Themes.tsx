@@ -103,14 +103,14 @@ const Themes = () => {
           <div className="flex items-center justify-center gap-2 mb-4">
             <Brain className="w-6 h-6 text-earth-green" />
             <span className="text-xl font-semibold text-foreground">
-              Ready to Code, Comply, and Conquer?
+              Ready to Build, Deploy, and Dominate?
             </span>
           </div>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Whether your expertise lies in AI development, cybersecurity, or legal technology, 
-            your innovative solutions can help shape the future of digital security and compliance.
+            Whether your expertise lies in autonomous AI, systems design, or human-centered automation, 
+            your innovative solutions can help shape the future of intelligent agent ecosystems.
           </p>
-          <Button variant="earth" size="lg" className="min-w-48">
+          <Button variant="accent" size="lg" className="min-w-48">
             Choose Your Theme
           </Button>
         </div>

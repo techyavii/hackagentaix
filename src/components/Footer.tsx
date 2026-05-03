@@ -7,7 +7,7 @@ import {
   Calendar,
   Heart,
   ExternalLink,
-  BrainCog
+  GitCompare
 } from "lucide-react";
 
 const Footer = () => {
@@ -29,7 +29,7 @@ const Footer = () => {
     {
       icon: <Mail className="w-4 h-4" />,
       label: "CONTACT",
-      value: "[Email id]"
+      value: "ai@hackagentaix.com"
     }
   ];
 
@@ -63,7 +63,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
-                <BrainCog className="w-7 h-7 text-white" />
+                <GitCompare className="w-7 h-7 text-white" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold">HackAgentAIx</h3>

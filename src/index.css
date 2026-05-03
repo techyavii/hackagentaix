@@ -17,44 +17,40 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 160 15% 15%;
 
-    --primary: 142 76% 36%;
-    --primary-foreground: 0 0% 98%;
+--primary: 196 100% 45%;
+  --primary-foreground: 0 0% 100%;
 
-    --secondary: 120 15% 92%;
-    --secondary-foreground: 160 15% 15%;
+  --secondary: 250 10% 90%;
+  --secondary-foreground: 220 15% 18%;
 
-    --muted: 120 15% 94%;
-    --muted-foreground: 160 10% 50%;
+  --muted: 220 12% 93%;
+  --muted-foreground: 220 10% 45%;
 
-    --accent: 168 76% 42%;
-    --accent-foreground: 0 0% 98%;
+  --accent: 286 90% 58%;
+  --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+  --destructive: 348 90% 57%;
+  --destructive-foreground: 0 0% 100%;
 
-    --border: 120 15% 88%;
-    --input: 120 15% 88%;
-    --ring: 142 76% 36%;
+  --border: 220 12% 88%;
+  --input: 220 12% 88%;
+  --ring: 196 100% 45%;
 
-  /* Cybersecurity color palette */
-  --primary: 212 100% 50%;
-  --primary-foreground: 0 0% 98%;
-
-  --earth-green: 212 100% 50%;    /* Primary blue */
-  --earth-teal: 233 80% 45%;      /* Deep blue */
-  --earth-blue: 262 83% 58%;      /* Purple */
-  --earth-lime: 318 100% 45%;     /* Magenta */
-  --earth-emerald: 187 100% 42%;  /* Cyan */
+  --earth-green: 196 100% 45%;    /* Neon cyan */
+  --earth-teal: 286 100% 58%;      /* Electric violet */
+  --earth-blue: 215 100% 53%;      /* Bright blue */
+  --earth-lime: 329 100% 62%;      /* Hot pink */
+  --earth-emerald: 180 100% 48%;   /* Aqua */
     
   /* Gradients */
-  --gradient-hero: linear-gradient(135deg, hsl(212 100% 50%) 0%, hsl(262 83% 58%) 50%, hsl(318 100% 45%) 100%);
-  --gradient-earth: linear-gradient(180deg, hsl(233 80% 45% / 0.1) 0%, hsl(187 100% 42% / 0.05) 100%);
-  --gradient-accent: linear-gradient(90deg, hsl(318 100% 45%) 0%, hsl(212 100% 50%) 100%);
+  --gradient-hero: linear-gradient(135deg, hsl(196 100% 45%) 0%, hsl(215 100% 53%) 50%, hsl(286 100% 58%) 100%);
+  --gradient-earth: linear-gradient(180deg, hsl(215 100% 53% / 0.1) 0%, hsl(180 100% 48% / 0.05) 100%);
+  --gradient-accent: linear-gradient(90deg, hsl(329 100% 62%) 0%, hsl(196 100% 45%) 100%);
 
   /* Shadows */
-  --shadow-earth: 0 10px 30px -10px hsl(212 100% 50% / 0.3);
-  --shadow-glow: 0 0 40px hsl(262 83% 58% / 0.2);
-  --shadow-card: 0 4px 20px -8px hsl(160 15% 15% / 0.1);
+  --shadow-earth: 0 10px 30px -10px hsl(196 100% 45% / 0.3);
+  --shadow-glow: 0 0 40px hsl(286 100% 58% / 0.2);
+  --shadow-card: 0 4px 20px -8px hsl(220 15% 18% / 0.1);
 
     --radius: 0.5rem;
 
