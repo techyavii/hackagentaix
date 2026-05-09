@@ -3,85 +3,34 @@ import { Badge } from "@/components/ui/badge";
 
 const Advisory = () => {
   const advisors = [
-    // {
-    //   name: "Dr Ginu Rajan",
-    //   affiliation: "Reader in Sensor Technologies, Cardiff School of Technologies",
-    //   location: "Cardiff Metropolitan University, UK",
-    //   image: "/lovable-uploads/Ginu.jpeg",
-    //   expertise: "Sensor Technologies"
-    // },
-    // {
-    //   name: "Dr Rajkumar Rathore",
-    //   affiliation: "Senior Lecturer in Computer Science & Programme Director MSc Computing and IT, Cardiff School of Technologies",
-    //   location: "Cardiff Metropolitan University, UK", 
-    //   image: "/lovable-uploads/Rajkumar.jpeg",
-    //   expertise: "Computer Science"
-    // },
-    // {
-    //   name: "Prof. Ali Kashif Bashir",
-    //   affiliation: "Computer Networks and Cybersecurity",
-    //   location: "Manchester Metropolitan University, UK",
-    //   image: "/lovable-uploads/AliKashif.jpeg",
-    //   expertise: "Computer Networks & Cybersecurity"
-    // },
-    // {
-    //   name: "Yu-Dong Zhang",
-    //   affiliation: "University of Leicester",
-    //   location: "LE1 7RH, UK",
-    //   image: "/lovable-uploads/ca5987e5-40a3-42c4-a206-e7f605ba6782.png",
-    //   expertise: "AI & Machine Learning"
-    // },
     {
-      name: "Md Fashiar Rahman",
-      affiliation: "THE UNIVERSITY OF TEXAS AT EL PASO",
-      location: "Texas, USA",
-      image: "/lovable-uploads/fashiar.jpg",
+      name: "Prof. Martin Reed",
+      affiliation: "University of Essex",
+      location: "UK",
+      image: "/advisory/Martin.jpg",
+      expertise: "AI & Research"
+    },
+    {
+      name: "Dr. Vishal Krishna Singh",
+      affiliation: "University of Essex",
+      location: "UK",
+      image: "/advisory/Vishal.jpg",
       expertise: "Computer Science"
     },
     {
-      name: "S.M. Atikur Rahman",
-      affiliation: "THE UNIVERSITY OF TEXAS AT EL PASO",
-      location: "Texas, USA",
-      image: "/lovable-uploads/atikur.jpeg",
+      name: "Dr. Rajkumar Singh Rathore",
+      affiliation: "Cardiff Metropolitan University",
+      location: "UK",
+      image: "/advisory/Rajkumar.jpeg",
       expertise: "Computer Science"
     },
     {
-      name: "George A. Tsihrintzis",
-      affiliation: "University of Piraeus",
-      location: "Greece",
-      image: "/lovable-uploads/86a7cbc4-bc91-4f1e-9dd3-f845b1e0a297.png",
-      expertise: "Computer Science"
-    },
-    {
-      name: "Bhuvan Unhelkar",
-      affiliation: "College of Business, University of South Florida",
-      location: "USA",
-      image: "/lovable-uploads/Bhuvan_Unhelkar.jpeg",
-      expertise: "Business & Technology"
-    },
-    {
-      name: "Zahid Akhtar, PhD",
-      affiliation: "Department of Electrical and Computer Engineering, State University of New York Polytechnic Institute",
-      location: "USA",
-      image: "/lovable-uploads/Zahid.png",
-      expertise: "Electrical & Computer Engineering"
-    },
-    {
-      name: "Dr. Deepak Gupta",
-      affiliation: "Department of Computer Science and Engineering, Maharaja Agrasen institute of Technology (GGSIPU)",
-      location: "India",
-      image: "/lovable-uploads/DeepakSir.jpg",
-      expertise: "Computer Science & Engineering"
-    },
-    {
-      name: "Dr. Utku Kose",
-      affiliation: "Suleyman Demirel University",
-      location: "Turkey",
-      image: "/lovable-uploads/Utku_Kose.jpeg",
-      expertise: "Artificial Intelligence & Cybersecurity"
+      name: "Dr. Ginu Rajan",
+      affiliation: "Cardiff Metropolitan University",
+      location: "UK",
+      image: "/advisory/Ginu.jpeg",
+      expertise: "Sensor Technologies"
     }
-
-
   ];
 
   return (
