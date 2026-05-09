@@ -74,7 +74,7 @@ const ProgramSchedule = () => {
               <Badge variant="secondary" className="w-fit mx-auto mb-2">Day 1</Badge>
               <CardTitle className="text-2xl text-foreground flex items-center justify-center gap-3">
                 <Calendar className="w-6 h-6 text-earth-green" />
-                [Your Date — Day 1]
+                30th July 2026 — Day 1
               </CardTitle>
               <p className="text-lg font-semibold text-earth-green">Selection Round</p>
             </CardHeader>
@@ -115,7 +115,7 @@ const ProgramSchedule = () => {
               <Badge variant="secondary" className="w-fit mx-auto mb-2 bg-earth-green text-white">Day 2</Badge>
               <CardTitle className="text-2xl text-foreground flex items-center justify-center gap-3">
                 <Calendar className="w-6 h-6 text-earth-green" />
-                [Your Date — Day 2]
+                31st July 2026 — Day 2
               </CardTitle>
               <p className="text-lg font-semibold text-earth-green">Final Round & Awards</p>
             </CardHeader>

@@ -24,7 +24,7 @@ const Footer = () => {
     {
       icon: <Calendar className="w-4 h-4" />,
       label: "EVENT DATE",
-      value: "[Your Date Here]"
+      value: "30-31st July 2026"
     },
     {
       icon: <Mail className="w-4 h-4" />,

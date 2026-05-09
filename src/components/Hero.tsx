@@ -47,7 +47,7 @@ const Hero = () => {
           <div className="inline-flex flex-wrap items-center justify-center gap-6 bg-white/10 backdrop-blur-sm rounded-2xl px-8 py-4 border border-white/20">
             <div className="flex items-center gap-2 bg-earth-green/20 px-3 py-2 rounded-lg border border-earth-green/30">
               <Calendar className="w-5 h-5 text-blue-300" />
-              <span className="font-medium text-blue-300">[Your Date Here]</span>
+              <span className="font-medium text-blue-300">30-31st July 2026</span>
             </div>
             <div className="flex items-center gap-2 bg-earth-blue/20 px-3 py-2 rounded-lg border border-earth-blue/30">
               <MapPin className="w-5 h-5 text-blue-200" />
@@ -157,12 +157,12 @@ const Hero = () => {
           </Link>
         </div>
 
-        {/* Organizer
+        {/* Organizer */}
         <div className="relative z-10 mt-12 animate-fade-in" style={{ animationDelay: '1.2s' }}>
           <p className="text-sm opacity-70">
-            Organized by <span className="font-semibold">AFI EduTech</span>
+            Organized by <span className="font-semibold">University of Essex, UK</span>
           </p>
-        </div> */}
+        </div>
       </div>
     </section>
   );
