@@ -132,7 +132,7 @@ const Awards = () => {
                 </span>
               </div>
               <div className="text-5xl md:text-6xl font-bold mb-4">
-                $[Total Prize Amount]
+                £1750
               </div>
               <p className="text-lg opacity-90 mb-6 max-w-2xl mx-auto">
                 Plus certificates, industry recognition, networking opportunities, and potential for further development partnerships!
