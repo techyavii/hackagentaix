@@ -46,6 +46,7 @@ const Footer = () => {
             and compete for the HackAgentAIx 2026 prize pool.
           </p>
           <Button 
+            disabled
             variant="secondary" 
             size="lg"
             onClick={() => {window.open('https://forms.gle/PAFktjYsSXd4CJP2A', '_blank')}}
@@ -77,6 +78,7 @@ const Footer = () => {
             </p>
             <div className="relative inline-block">
               <Button 
+                disabled
                 variant="default" 
                 // className="border-white/30 text-white hover:bg-white/10 opacity-60 cursor-not-allowed"
                 onClick={() => {window.open('https://forms.gle/PAFktjYsSXd4CJP2A', '_blank')}}

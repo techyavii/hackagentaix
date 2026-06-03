@@ -1,62 +1,98 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Award, Target, Cog, TrendingUp, Presentation, Users } from "lucide-react";
+import { Award, Target, Cog, TrendingUp, Presentation, Users, Globe, Brain, Wrench, BarChart } from "lucide-react";
 
 const JudgingCriteria = () => {
   const criteria = [
     {
-      title: "Agent Autonomy — 25 points",
+      title: "Innovation & Creativity",
+      percentage: "20%",
       icon: <Award className="w-6 h-6" />,
-      description: "How autonomous is the agent? Does it independently plan, reason, and execute tasks from a single goal input — with minimal or zero human intervention mid-task? Does it handle errors and adapt on its own?",
+      description: "Originality of the idea, uniqueness of the solution, and innovative approach to solving the problem.",
+      keyQuestion: "How original and creative is this solution?",
       points: [
-        "Goal-to-output completion without prompting",
-        "Multi-step planning capability",
-        "Error recovery and self-correction",
-        "Degree of human involvement required"
+        "Novelty and uniqueness of the concept",
+        "Creative use of technology",
+        "Out-of-the-box thinking",
+        "Potential for breakthrough impact"
       ]
     },
     {
-      title: "Real-World Impact — 25 points",
-      icon: <Target className="w-6 h-6" />,
-      description: "Does the solution solve a genuine, meaningful problem? How applicable is it in a real-world environment? Could it be deployed and used by actual organisations or individuals today?",
-      points: [
-        "Clarity and significance of the problem being solved",
-        "Practical deployability of the agent",
-        "Target audience and use case relevance",
-        "Measurable value delivered"
-      ]
-    },
-    {
-      title: "Technical Implementation — 20 points",
+      title: "Technical Implementation",
+      percentage: "20%",
       icon: <Cog className="w-6 h-6" />,
-      description: "How well is the agent built? Is the code clean, efficient, and well-architected? Does the team demonstrate strong engineering practices and effective use of agentic frameworks?",
+      description: "Effective use of technologies such as AI, IoT, data analytics, intelligent systems, or other advanced tools. Code quality, architecture, and technical complexity will be considered.",
+      keyQuestion: "How well is the technology implemented?",
       points: [
+        "Technical soundness and complexity",
         "Code quality and architecture",
-        "Use of appropriate agentic frameworks (LangChain, CrewAI, AutoGen, etc.)",
-        "System reliability and robustness",
-        "Documentation and reproducibility"
+        "Appropriate use of advanced technologies",
+        "System performance and reliability"
       ]
     },
     {
-      title: "Innovation & Creativity — 20 points",
+      title: "Problem Relevance & Impact",
+      percentage: "15%",
+      icon: <Target className="w-6 h-6" />,
+      description: "How well the solution addresses a real-world problem and its potential social, industrial, or economic impact.",
+      keyQuestion: "Does this solve a real problem with impact?",
+      points: [
+        "Relevance to real-world challenges",
+        "Potential for measurable impact",
+        "Social, industrial, or economic benefits",
+        "Scalability of the solution"
+      ]
+    },
+    {
+      title: "Functionality & Prototype Development",
+      percentage: "15%",
+      icon: <Wrench className="w-6 h-6" />,
+      description: "Working prototype, usability, and functionality of the solution. Demonstration of key features and system performance.",
+      keyQuestion: "Does the prototype work and demonstrate value?",
+      points: [
+        "Functionality of the prototype",
+        "Usability and user experience",
+        "Demonstration of key features",
+        "System performance and stability"
+      ]
+    },
+    {
+      title: "Scalability & Feasibility",
+      percentage: "10%",
       icon: <TrendingUp className="w-6 h-6" />,
-      description: "Is the approach novel? Does the solution go beyond standard LLM wrappers to introduce genuinely new ideas, architectures, or applications of agentic AI?",
+      description: "Practical feasibility of implementing the solution in real environments and its ability to scale or expand in the future.",
+      keyQuestion: "Can this solution scale in the real world?",
       points: [
-        "Originality of the concept",
-        "Novel use of agentic patterns or multi-agent design",
-        "Creative problem framing",
-        "Differentiation from existing solutions"
+        "Practical implementation feasibility",
+        "Scalability potential",
+        "Cost-effectiveness",
+        "Long-term sustainability"
       ]
     },
     {
-      title: "Presentation & Communication — 10 points",
-      icon: <Presentation className="w-6 h-6" />,
-      description: "How clearly and confidently does the team explain their solution? Is the problem, approach, and impact communicated in a way that is accessible to both technical and non-technical judges?",
+      title: "User Experience & Design",
+      percentage: "10%",
+      icon: <Users className="w-6 h-6" />,
+      description: "Interface design, usability, accessibility, and overall user interaction quality.",
+      keyQuestion: "Is the solution user-friendly and well-designed?",
       points: [
-        "Clarity and structure of the presentation",
-        "Quality of the live demo",
-        "Ability to answer questions under Q&A",
-        "Visual quality of slides"
+        "Interface design quality",
+        "Usability and accessibility",
+        "User interaction design",
+        "Overall aesthetic and functionality"
+      ]
+    },
+    {
+      title: "Presentation & Communication",
+      percentage: "10%",
+      icon: <Presentation className="w-6 h-6" />,
+      description: "Clarity of explanation, problem articulation, demo effectiveness, and ability to answer judges' questions.",
+      keyQuestion: "How well is the solution presented?",
+      points: [
+        "Clarity of explanation",
+        "Demo effectiveness",
+        "Communication skills",
+        "Ability to answer questions"
       ]
     }
   ];
@@ -64,16 +100,16 @@ const JudgingCriteria = () => {
   return (
     <div className="min-h-screen bg-gradient-earth">
       <div className="container mx-auto px-4 py-20">
-        {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            HackAgentAIx 2026 — Judging Criteria
+            Judging Criteria & Scoring Rubric
           </h1>
           <div className="w-24 h-1 bg-gradient-accent mx-auto mb-8"></div>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            All submissions will be evaluated by our expert judging panel across 
-            five core dimensions. Each criterion reflects what makes an agentic AI 
-            solution truly impactful, robust, and ready for the real world.
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-4">
+            HackAgentAIx : The Autonomous AI Challenge 2026
+          </p>
+          <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+            All submitted projects will be evaluated by a panel of industry experts, academicians, and technology professionals. Each project will be assessed based on the following criteria. Total Score: 100 Marks
           </p>
         </div>
 
@@ -93,11 +129,15 @@ const JudgingCriteria = () => {
                     {criterion.percentage}
                   </Badge>
                 </div>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed mb-3">
                   {criterion.description}
+                </p>
+                <p className="text-sm font-semibold text-earth-green">
+                  📌 Key Question: {criterion.keyQuestion}
                 </p>
               </CardHeader>
               <CardContent>
+                <p className="text-sm text-muted-foreground mb-3">Judges will assess:</p>
                 <ul className="space-y-3">
                   {criterion.points.map((point, pointIndex) => (
                     <li key={pointIndex} className="flex items-start gap-3">
@@ -111,40 +151,32 @@ const JudgingCriteria = () => {
           ))}
         </div>
 
-        {/* Scoring Summary Box */}
-        <div className="text-center bg-white/90 backdrop-blur-sm rounded-3xl p-8 max-w-4xl mx-auto">
+        {/* Summary */}
+        <div className="mt-16 text-center bg-white/90 backdrop-blur-sm rounded-3xl p-8 max-w-4xl mx-auto">
           <h3 className="text-2xl font-bold text-foreground mb-6">
-            📊 Scoring Breakdown
+            🧮 Evaluation Summary
           </h3>
-          <div className="text-left bg-muted/50 rounded-lg p-6 font-mono text-sm">
-            <div className="space-y-2">
-              <div className="flex justify-between">
-                <span>Agent Autonomy</span>
-                <span>→ 25 points</span>
-              </div>
-              <div className="flex justify-between">
-                <span>Real-World Impact</span>
-                <span>→ 25 points</span>
-              </div>
-              <div className="flex justify-between">
-                <span>Technical Implementation</span>
-                <span>→ 20 points</span>
-              </div>
-              <div className="flex justify-between">
-                <span>Innovation & Creativity</span>
-                <span>→ 20 points</span>
-              </div>
-              <div className="flex justify-between">
-                <span>Presentation</span>
-                <span>→ 10 points</span>
-              </div>
-              <div className="border-t border-muted-foreground/30 pt-2 mt-4">
-                <div className="flex justify-between font-bold">
-                  <span>Total</span>
-                  <span>→ 100 points</span>
-                </div>
-              </div>
-            </div>
+          <div className="overflow-x-auto">
+            <table className="w-full text-left border-collapse">
+              <thead>
+                <tr className="border-b border-muted-foreground/20">
+                  <th className="pb-3 font-semibold text-foreground">Criteria</th>
+                  <th className="pb-3 font-semibold text-foreground text-right">Weightage</th>
+                </tr>
+              </thead>
+              <tbody>
+                {criteria.map((criterion, index) => (
+                  <tr key={index} className="border-b border-muted-foreground/10">
+                    <td className="py-3 text-muted-foreground">{criterion.title}</td>
+                    <td className="py-3 text-muted-foreground text-right font-semibold">{criterion.percentage}</td>
+                  </tr>
+                ))}
+                <tr className="border-t-2 border-muted-foreground/20">
+                  <td className="py-3 font-bold text-foreground">Total</td>
+                  <td className="py-3 font-bold text-foreground text-right">100%</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>

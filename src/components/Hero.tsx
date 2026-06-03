@@ -51,7 +51,7 @@ const Hero = () => {
             </div>
             <div className="flex items-center gap-2 bg-earth-blue/20 px-3 py-2 rounded-lg border border-earth-blue/30">
               <MapPin className="w-5 h-5 text-blue-200" />
-              <span className="font-medium text-blue-200">Online + In-Person</span>
+              <span className="font-medium text-blue-200">Online at UK</span>
             </div>
             <div className="flex items-center gap-2 bg-earth-teal/20 px-3 py-2 rounded-lg border border-earth-teal/30">
               <Users className="w-5 h-5 text-teal-200" />
@@ -77,63 +77,33 @@ const Hero = () => {
           </p>
         </div>
 
-        {/* Our Collaborators */}
-        <div className="relative z-10 mb-12 animate-fade-in" style={{ animationDelay: '0.75s' }}>
-          <h3 className="text-xl md:text-2xl font-semibold mb-6 text-white">
-            Our Collaborators
-          </h3>
-          <div className="flex flex-wrap items-center justify-center gap-8 max-w-6xl mx-auto">
-            {/* <div className="flex items-center justify-center p-4 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300">
-              <img 
-                src="/collaborators/USouthFlorida-green-logo.png" 
-                alt="University of South Florida" 
-                className="h-12 md:h-16 object-contain filter "
-              />
-            </div> */}
-            {/* <div className="flex items-center justify-center p-4 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300">
-              <img 
-                src="/collaborators/cardiff.png" 
-                alt="Cardiff Metropolitan University" 
-                className="h-12 md:h-16 object-contain"
-              />
-            </div>
-            <div className="flex items-center justify-center p-4 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300">
-              <img 
-                src="/collaborators/manchester.png" 
-                alt="Manchester Metropolitan University" 
-                className="h-12 md:h-16 object-contain "
-              />
-            </div> */}
-            <div className="flex items-center justify-center p-4 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300">
-            <img 
-              src="/collaborators/utep.jpeg" 
-              alt="University of Texas at El Paso" 
-              className="h-12 md:h-16 object-contain bg-white rounded-lg p-2"
+       {/* Organized By */}
+        <div
+          className="relative z-10 mb-12 animate-fade-in"
+          style={{ animationDelay: "0.75s" }}
+        >
+        <h3 className="text-xl md:text-2xl font-semibold mb-6 text-white">
+          Organized By
+        </h3>
+
+        <div className="flex justify-center">
+          <div className="flex flex-col items-center justify-center p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 hover:bg-white/20 transition-all duration-300 max-w-md">
+            <img
+              src="/collaborators/essex-logo.png"
+              alt="University of Essex"
+              className="h-16 md:h-20 object-contain mb-4 bg-white rounded-lg p-2"
             />
-          </div>
-           <div className="flex items-center justify-center p-4 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300">
-            <img 
-              src="/collaborators/USouthFlorida-green-logo.png" 
-              alt="University of South Florida" 
-              className="h-12 md:h-16 object-contain bg-white rounded-lg p-2"
-            />
-          </div>
-             <div className="flex items-center justify-center p-4 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300">
-              <img 
-                src="/collaborators/piraeus.jpeg" 
-                alt="University of Piraeus" 
-                className="h-12 md:h-16 object-contain filter "
-              />
-            </div>
-            <div className="flex items-center justify-center p-4 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300">
-              <img 
-                src="/collaborators/suny.jpg" 
-                alt="State University of New York Polytechnic Institute, USA" 
-                className="h-12 md:h-16 object-contain filter "
-              />
-            </div>
+
+            <h4 className="text-lg md:text-xl font-semibold text-white text-center">
+              University of Essex
+            </h4>
+
+            <p className="text-white/80 text-sm md:text-base text-center mt-1">
+              England, United Kingdom
+            </p>
           </div>
         </div>
+      </div>
 
         {/* CTA Buttons */}
         <div className="relative z-10 flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in" style={{ animationDelay: '0.9s' }}>
@@ -141,6 +111,7 @@ const Hero = () => {
             <Button 
               variant="hero" 
               size="xl" 
+              disabled
               // className="min-w-48 opacity-60 cursor-not-allowed"
               onClick={() => {window.open('https://forms.gle/PAFktjYsSXd4CJP2A', '_blank')}}
             >
@@ -155,13 +126,6 @@ const Hero = () => {
               View Themes
             </Button>
           </Link>
-        </div>
-
-        {/* Organizer */}
-        <div className="relative z-10 mt-12 animate-fade-in" style={{ animationDelay: '1.2s' }}>
-          <p className="text-sm opacity-70">
-            Organized by <span className="font-semibold">University of Essex, UK</span>
-          </p>
         </div>
       </div>
     </section>

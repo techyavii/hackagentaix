@@ -2,57 +2,56 @@ import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, Clock, Calendar } from "lucide-react";
 
 const Timeline = () => {
-  const events = [
-    {
-      phase: "🟣 Phase 1",
-      title: "Registrations Open",
-      description: "Teams and individuals register on the official HackAgentAIx portal. Solo participants and teams of up to 4 are welcome.",
-      status: "upcoming",
-      icon: <Calendar className="w-5 h-5" />
-    },
-    {
-      phase: "🟣 Phase 2",
-      title: "Registration Deadline",
-      description: "Last date to register for HackAgentAIx 2026. No registrations accepted after this date.",
-      status: "upcoming",
-      icon: <Clock className="w-5 h-5" />
-    },
-    {
-      phase: "🟣 Phase 3",
-      title: "Problem Statement Release",
-      description: "Official challenge tracks and problem statements released to all registered participants.",
-      status: "upcoming",
-      icon: <CheckCircle className="w-5 h-5" />
-    },
-    {
-      phase: "🟣 Phase 4",
-      title: "Hacking Period Begins",
-      description: "The 48-hour build sprint officially begins. Teams start building their autonomous AI agent solutions.",
-      status: "upcoming",
-      icon: <CheckCircle className="w-5 h-5" />
-    },
-    {
-      phase: "🟣 Phase 5",
-      title: "Submission Deadline",
-      description: "All project submissions, code repositories, and demo videos must be submitted before this deadline.",
-      status: "main-event",
-      icon: <Calendar className="w-5 h-5" />
-    },
-    {
-      phase: "🟣 Phase 6",
-      title: "Day 1 — Selection Round",
-      description: "All registered teams present their solutions to the judging panel via Zoom. Shortlisted teams announced.",
-      status: "main-event",
-      icon: <CheckCircle className="w-5 h-5" />
-    },
-    {
-      phase: "🟣 Phase 7",
-      title: "Day 2 — Final Round & Awards",
-      description: "Shortlisted teams deliver final presentations. Winners announced and prizes distributed.",
-      status: "main-event",
-      icon: <CheckCircle className="w-5 h-5" />
-    }
-  ];
+ const events = [
+  {
+    phase: "📢",
+    title: "Registration Opens",
+    description: "Registration portal opens for students, developers, researchers, and innovators worldwide.",
+    date: "10 June, 2026",
+    status: "upcoming",
+    icon: <Calendar className="w-5 h-5" />
+  },
+  {
+    phase: "💡",
+    title: "Idea Submission Deadline",
+    description: "Last date to submit your innovative idea and team details for evaluation.",
+    date: "20 July, 2026",
+    status: "upcoming",
+    icon: <Clock className="w-5 h-5" />
+  },
+  {
+    phase: "📋",
+    title: "Selection Round (Shortlisting of Teams)",
+    description: "Submitted ideas are reviewed and shortlisted teams are selected for the final round.",
+    date: "30 July, 2026",
+    status: "upcoming",
+    icon: <CheckCircle className="w-5 h-5" />
+  },
+  {
+    phase: "📩",
+    title: "Notification of Shortlisted Teams",
+    description: "Selected teams receive official confirmation and participation details for the final hackathon round.",
+    date: "30 July, 2026 (Midnight)",
+    status: "upcoming",
+    icon: <CheckCircle className="w-5 h-5" />
+  },
+  {
+    phase: "🚀",
+    title: "HackAgentAIx 2026 Hackathon",
+    description: "The main event begins! Build, collaborate, innovate, and compete with the best minds from around the world.",
+    date: "30–31 July, 2026",
+    status: "main-event",
+    icon: <Calendar className="w-5 h-5" />
+  },
+  {
+    phase: "🏆",
+    title: "Winners Announcement, Certificates & Prize Distribution",
+    description: "Celebrating excellence with winner announcements, certificates, and prize distribution.",
+    date: "31 July, 2026",
+    status: "main-event",
+    icon: <CheckCircle className="w-5 h-5" />
+  }
+];
 
   return (
     <section id="timeline" className="py-20 bg-gradient-earth">

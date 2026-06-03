@@ -277,10 +277,10 @@ const JudgeAppointmentCriteriaPage = () => {
                     <div className="flex items-center justify-center space-x-2">
                       <Mail className="w-5 h-5" />
                       <a 
-                        href="mailto:ai@hacksecurex.com" 
+                        href="mailto:ai@hackagentaix.com" 
                         className="text-lg hover:underline"
                       >
-                        ai@hacksecurex.com
+                        ai@hackagentaix.com
                       </a>
                     </div>
                   </div>

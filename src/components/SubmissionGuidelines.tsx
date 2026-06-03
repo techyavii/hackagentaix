@@ -3,41 +3,83 @@ import { Badge } from "@/components/ui/badge";
 import { FileText, Video, Upload, Calendar, Users, Lightbulb, Target, BarChart3, Rocket } from "lucide-react";
 
 const SubmissionGuidelines = () => {
-  const submissionComponents = [
+  const slideStructure = [
     {
       number: 1,
-      title: "Project Title & Description",
-      description: "A clear title and a written summary (max 500 words) explaining what your agent does, the problem it solves, and how it works."
+      title: "Team and Institutional Information",
+      icon: <Users className="w-5 h-5" />,
+      points: [
+        "Name of the institution or university or organization",
+        "Official institution/university/organization logo", 
+        "Team name (if applicable)",
+        "Names and designated roles of all team members",
+        "Contact information (email and phone number of the team leader)"
+      ]
     },
     {
       number: 2,
-      title: "GitHub Repository (Public)",
-      description: "Your complete, working codebase must be submitted via a public GitHub repository. Include a detailed README with: • Setup and installation instructions • How to run the agent • Dependencies and tech stack used • Architecture overview or diagram"
+      title: "Environmental Problem Statement",
+      icon: <Target className="w-5 h-5" />,
+      points: [
+        "Clearly articulate the environmental issue your team aims to address",
+        "Explain the significance of the problem and its impact on local ecosystems or communities",
+        "Include relevant data or examples to highlight the urgency and importance of the issue"
+      ]
     },
     {
       number: 3,
-      title: "Demo Video (3–5 minutes)",
-      description: "A screen-recorded video demonstrating your agent working end-to-end. The video must show: • The agent receiving a goal/task • The agent autonomously executing multi-step actions • The final output or result produced Upload to YouTube (unlisted or public) or Google Drive and submit the link."
+      title: "Proposed Sustainable Solution",
+      icon: <Lightbulb className="w-5 h-5" />,
+      points: [
+        "Describe your innovative solution to the identified challenge",
+        "Detail how technology is integrated to achieve sustainable outcomes",
+        "Emphasize the distinctive features of your approach, especially its suitability for the local context"
+      ]
     },
     {
       number: 4,
-      title: "Presentation Slides",
-      description: "Upload your slide deck (PDF or PowerPoint) covering: • Problem statement • Your agent solution and architecture • Demo highlights • Real-world impact and scalability • Tech stack used"
+      title: "Impact and Feasibility",
+      icon: <BarChart3 className="w-5 h-5" />,
+      points: [
+        "Estimate the potential environmental benefits (e.g. CO₂ reduction, water conservation, etc.)",
+        "Evaluate the solution's technical and financial viability",
+        "Compare your approach to existing solutions, highlighting improvements in sustainability and efficiency"
+      ]
     },
     {
       number: 5,
-      title: "Track Selection",
-      description: "Clearly state which of the 4 hackathon tracks your submission belongs to."
+      title: "Implementation and Scalability",
+      icon: <Rocket className="w-5 h-5" />,
+      points: [
+        "Present a realistic implementation plan, including major milestones",
+        "Identify anticipated local challenges and proposed strategies for overcoming them",
+        "Discuss how the solution can be scaled or adapted to other regions facing similar environmental issues"
+      ]
     }
   ];
 
-  const submissionRules = [
-    "All work must be original and created during the hackathon period",
-    "Pre-built projects or projects submitted to other hackathons simultaneously are not permitted",
-    "All team members must be listed in the submission form",
-    "Late submissions will not be accepted under any circumstances",
-    "Submissions must be in English",
-    "Teams retain full intellectual property rights over their work"
+  const requirements = [
+    {
+      title: "File Format",
+      icon: <FileText className="w-6 h-6" />,
+      description: "Presentations must be submitted in PowerPoint format (.ppt or .pptx), with a maximum file size of 10MB. Please ensure all fonts are embedded to prevent formatting issues during evaluation."
+    },
+    {
+      title: "Prototype Demonstration",
+      icon: <Video className="w-6 h-6" />,
+      description: "If a working prototype is available, participants are required to create a 2–3 minute video showcasing the solution's key functionalities and its environmental impact. The video should be uploaded to platforms such as YouTube or Vimeo and the link must be included during the registration process."
+    },
+    {
+      title: "File Naming Convention",
+      icon: <Upload className="w-6 h-6" />,
+      description: "Please name your PowerPoint file using the following convention: TeamName_Institution_HackathonCategory.pptx",
+      example: "Example: XYZ_UVWUniversity_CarbonTracking.pptx"
+    },
+    {
+      title: "Submission Deadline",
+      icon: <Calendar className="w-6 h-6" />,
+      description: "All presentations must be submitted by 25th May, 2026, at 11:59 PM. Late submissions will not be accepted. To avoid last-minute technical issues, teams are advised to submit their entries well before the deadline."
+    }
   ];
 
   return (
@@ -46,94 +88,100 @@ const SubmissionGuidelines = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            HackAgentAIx 2026 — Submission Guidelines
+            Submission Guidelines
           </h1>
           <div className="w-24 h-1 bg-gradient-accent mx-auto mb-8"></div>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            All teams must submit their projects before the deadline via the 
-            official submission portal. Incomplete submissions will not be 
-            considered for evaluation. Please read all guidelines carefully.
+            Participants are required to submit a PowerPoint (PPT) presentation consisting of five slides 
+            that clearly outline their proposed environmental solution.
           </p>
         </div>
 
-        {/* What to Submit */}
+        {/* Slide Structure */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-foreground text-center mb-12">
-            ✅ Required Submission Components
+            Suggested Structure for Presentation Slides
           </h2>
-          <div className="space-y-6 max-w-6xl mx-auto">
-            {submissionComponents.map((component, index) => (
+          <div className="grid gap-6 max-w-5xl mx-auto">
+            {slideStructure.map((slide, index) => (
               <Card key={index} className="bg-white/90 backdrop-blur-sm border-0 shadow-card hover:shadow-earth transition-all duration-300">
-                <CardContent className="p-6">
-                  <div className="flex items-start gap-4">
-                    <Badge variant="secondary" className="w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">
-                      {component.number}
+                <CardHeader className="pb-4">
+                  <div className="flex items-center gap-4">
+                    <Badge variant="secondary" className="w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">
+                      {slide.number}
                     </Badge>
-                    <div className="flex-1">
-                      <h3 className="text-lg font-semibold text-foreground mb-2">
-                        {component.title}
-                      </h3>
-                      <p className="text-muted-foreground leading-relaxed whitespace-pre-line">
-                        {component.description}
-                      </p>
+                    <div className="w-10 h-10 rounded-lg bg-gradient-hero text-white flex items-center justify-center">
+                      {slide.icon}
                     </div>
+                    <CardTitle className="text-xl text-foreground">{slide.title}</CardTitle>
                   </div>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-3">
+                    {slide.points.map((point, pointIndex) => (
+                      <li key={pointIndex} className="flex items-start gap-3">
+                        <div className="w-2 h-2 rounded-full bg-earth-green mt-2 flex-shrink-0"></div>
+                        <span className="text-foreground leading-relaxed">{point}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </CardContent>
               </Card>
             ))}
           </div>
         </div>
 
-        {/* Submission Rules */}
+        {/* Additional Guidelines */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-foreground text-center mb-12">
-            📋 Submission Rules
+            Additional Submission Guidelines
           </h2>
-          <div className="max-w-4xl mx-auto">
-            <Card className="bg-white/90 backdrop-blur-sm border-0 shadow-card">
-              <CardContent className="p-8">
-                <ul className="space-y-4">
-                  {submissionRules.map((rule, index) => (
-                    <li key={index} className="flex items-start gap-4">
-                      <Badge variant="outline" className="w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">
-                        {index + 1}
-                      </Badge>
-                      <span className="text-foreground leading-relaxed">{rule}</span>
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {requirements.map((req, index) => (
+              <Card key={index} className="bg-white/90 backdrop-blur-sm border-0 shadow-card hover:shadow-earth transition-all duration-300">
+                <CardHeader className="pb-4">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 rounded-lg bg-gradient-hero text-white flex items-center justify-center">
+                      {req.icon}
+                    </div>
+                    <CardTitle className="text-xl text-foreground">{req.title}</CardTitle>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground leading-relaxed mb-3">
+                    {req.description}
+                  </p>
+                  {req.example && (
+                    <div className="bg-earth-green/10 rounded-lg p-3 mt-3">
+                      <p className="text-earth-green font-medium text-sm">{req.example}</p>
+                    </div>
+                  )}
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
 
-        {/* Submission Portal Notice */}
+        {/* Supporting Documentation */}
         <div className="max-w-4xl mx-auto">
-          <Card className="bg-gradient-hero/10 backdrop-blur-sm border-0 shadow-card">
+          <Card className="bg-white/90 backdrop-blur-sm border-0 shadow-card">
             <CardHeader>
               <CardTitle className="text-2xl text-foreground flex items-center gap-3">
                 <FileText className="w-8 h-8 text-earth-green" />
-                Submission Portal Notice
+                Supporting Documentation
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="space-y-4">
-                <p className="text-muted-foreground leading-relaxed">
-                  All submissions must be made through the official HackAgentAIx submission portal. The portal will open on [Submission Start Date] and close on [Submission Deadline]. Late submissions will not be accepted.
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Participants may include up to three supplementary pages in an appendix to provide technical details, 
+                data sources, calculations or diagrams supporting the proposed solution. These materials should be 
+                clearly referenced within the main presentation.
+              </p>
+              <div className="bg-gradient-hero/10 rounded-lg p-4">
+                <p className="text-foreground font-medium">
+                  💡 Pro Tip: Use the appendix to include detailed technical specifications, 
+                  research data implementation diagrams that support your main presentation.
                 </p>
-                <div className="bg-white/50 rounded-lg p-4 border border-earth-green/20">
-                  <p className="text-foreground font-medium mb-2">
-                    🔗 Submission Portal Link
-                  </p>
-                  <p className="text-muted-foreground">
-                    The submission portal will be available at: <code className="bg-earth-green/10 px-2 py-1 rounded text-sm">https://hackagentai.submission.com</code>
-                  </p>
-                </div>
-                <div className="bg-earth-green/10 rounded-lg p-4">
-                  <p className="text-foreground font-medium">
-                    💡 Pro Tip: Test your submission early! The portal allows you to save drafts and preview your submission before final submission.
-                  </p>
-                </div>
               </div>
             </CardContent>
           </Card>

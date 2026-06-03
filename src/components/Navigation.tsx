@@ -122,6 +122,7 @@ const Navigation = () => {
 
             <div className="relative">
               <Button
+              disabled
                 variant="earth"
                 size="sm"
                 // disabled
@@ -203,7 +204,7 @@ const Navigation = () => {
                     variant="earth"
                     size="sm"
                     // className="w-full opacity-60 cursor-not-allowed"
-                    // disabled
+                    disabled
                     onClick={() => {window.open('https://forms.gle/PAFktjYsSXd4CJP2A', '_blank')}}
                   >
                     Register Now

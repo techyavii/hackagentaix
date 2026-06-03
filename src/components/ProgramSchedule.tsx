@@ -88,6 +88,7 @@ const ProgramSchedule = () => {
                 </p>
               </div>
               <Button
+                disabled
                 className="w-full py-6 mb-4 font-bold text-lg"
                 onClick={() =>
                   window.open(
@@ -129,6 +130,7 @@ const ProgramSchedule = () => {
                 </p>
               </div>
               <Button
+              disabled
                 className="w-full py-6 mb-4 font-bold text-lg"
                 onClick={() =>
                   window.open(
@@ -140,6 +142,7 @@ const ProgramSchedule = () => {
                 Day-2 Shortlisted Teams
               </Button> 
               <Button
+              disabled
                 className="w-full"
                 onClick={() => window.open("https://us06web.zoom.us/j/81925476598?pwd=nezR51Wi2Z5XH0VYGmelZNEWHnZJen.1", "_blank")}
               >
