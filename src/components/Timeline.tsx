@@ -106,8 +106,8 @@ const Timeline = () => {
                               }`}>
                                 {event.phase} {event.title}
                               </h3>
-                              <div className="text-sm text-muted-foreground">
-                                {event.status === 'main-event' ? '🚀 Main event - don\'t miss it!' : 'Upcoming'}
+                              <div className="text-sm font-semibold text-black">
+                                {event.date}
                               </div>
                             </div>
                             <p className="text-muted-foreground text-sm leading-relaxed">
