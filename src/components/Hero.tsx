@@ -111,7 +111,7 @@ const Hero = () => {
             <Button 
               variant="hero" 
               size="xl" 
-              disabled
+              // disabled
               // className="min-w-48 opacity-60 cursor-not-allowed"
               onClick={() => {window.open('https://forms.gle/mQWWXv86sdCb1bMF6', '_blank')}}
             >
