@@ -267,7 +267,7 @@ const JudgeAppointmentCriteriaPage = () => {
                     October 24-25, 6
                   </p> */}
                   <p className="text-lg opacity-90 leading-relaxed mb-8">
-                    Our distinguished panel of cybersecurity experts, legal technology pioneers, and AI ethics leaders will be unveiled in December 2026. These industry leaders will bring unparalleled expertise to evaluate your innovative solutions. Follow our channels for the exciting reveal of these visionaries in digital security and legal technology.
+                    Our distinguished panel of cybersecurity experts, legal technology pioneers, and AI ethics leaders will be unveiled in July 2026. These industry leaders will bring unparalleled expertise to evaluate your innovative solutions. Follow our channels for the exciting reveal of these visionaries in digital security and legal technology.
                   </p>
                   
                   <div className="border-t border-white/20 pt-8">
