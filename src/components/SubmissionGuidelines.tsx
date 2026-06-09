@@ -78,7 +78,7 @@ const SubmissionGuidelines = () => {
     {
       title: "Submission Deadline",
       icon: <Calendar className="w-6 h-6" />,
-      description: "All presentations must be submitted by 25th May, 2026, at 11:59 PM. Late submissions will not be accepted. To avoid last-minute technical issues, teams are advised to submit their entries well before the deadline."
+      description: "All presentations must be submitted by 20 July, 2026, at 11:59 PM. Late submissions will not be accepted. To avoid last-minute technical issues, teams are advised to submit their entries well before the deadline."
     }
   ];
 

@@ -16,6 +16,7 @@ import AwardsPage from "./pages/AwardsPage";
 import JudgeAppointmentCriteriaPage from "./pages/JudgeAppointmentCriteriaPage";
 import JudgeRecognitionAwardsPage from "./pages/JudgeRecognitionAwardsPage";
 import ResultsPage from "./pages/ResultPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+      <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/schedule" element={<ProgramSchedulePage />} />
