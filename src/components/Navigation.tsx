@@ -66,7 +66,7 @@ const Navigation = () => {
               >
                 Resources
                 <ChevronDown
-                  className={`w-4 h-4 transition-transform duration-200 £{
+                  className={`w-4 h-4 transition-transform duration-200 ${
                     openDropdown === "resources" ? "rotate-180" : ""
                   }`}
                 />
@@ -97,7 +97,7 @@ const Navigation = () => {
               >
                 Judges
                 <ChevronDown
-                  className={`w-4 h-4 transition-transform duration-200 £{
+                  className={`w-4 h-4 transition-transform duration-200 ${
                     openDropdown === "judges" ? "rotate-180" : ""
                   }`}
                 />

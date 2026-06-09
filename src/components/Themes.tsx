@@ -70,7 +70,7 @@ const Themes = () => {
             >
               <CardHeader className="pb-4">
                 <div className="flex items-center justify-between mb-4">
-                  <div className={`w-12 h-12 rounded-lg bg-gradient-to-r £{theme.color} flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300`}>
+                  <div className={`w-12 h-12 rounded-lg bg-gradient-to-r ${theme.color} flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300`}>
                     {theme.icon}
                   </div>
                   <Badge variant="secondary" className="bg-earth-green/10 text-earth-green font-medium">

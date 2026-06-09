@@ -367,7 +367,7 @@ const Judges = () => {
                   <div className="aspect-square relative overflow-hidden">
                     <img 
                       src={judge.image} 
-                      alt={`£{judge.name} - Hackathon Judge`}
+                      alt={`${judge.name} - Hackathon Judge`}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

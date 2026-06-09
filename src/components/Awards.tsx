@@ -57,10 +57,10 @@ const Awards = () => {
             {grandPrizes.map((prize, index) => (
               <Card 
                 key={index}
-                className={`relative overflow-hidden border-0 shadow-card hover:shadow-earth transition-all duration-300 group bg-gradient-to-br £{prize.bgGradient}`}
+                className={`relative overflow-hidden border-0 shadow-card hover:shadow-earth transition-all duration-300 group bg-gradient-to-br ${prize.bgGradient}`}
               >
                 <CardHeader className="text-center pb-4">
-                  <div className={`w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r £{prize.gradient} flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+                  <div className={`w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r ${prize.gradient} flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300`}>
                     {prize.icon}
                   </div>
                   <Badge variant="secondary" className="w-fit mx-auto mb-2 bg-white/80">
@@ -69,7 +69,7 @@ const Awards = () => {
                   <CardTitle className="text-xl text-foreground mb-2">
                     {prize.title}
                   </CardTitle>
-                  <div className={`text-3xl font-bold bg-gradient-to-r £{prize.gradient} bg-clip-text text-transparent`}>
+                  <div className={`text-3xl font-bold bg-gradient-to-r ${prize.gradient} bg-clip-text text-transparent`}>
                     {prize.prize}
                   </div>
                 </CardHeader>

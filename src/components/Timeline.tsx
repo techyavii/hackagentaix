@@ -79,20 +79,20 @@ const Timeline = () => {
               {events.map((event, index) => (
                 <div key={index} className="relative">
                   {/* Timeline Dot */}
-                  <div className={`absolute left-2 md:left-1/2 md:transform md:-translate-x-1/2 w-4 h-4 rounded-full border-2 £{
+                  <div className={`absolute left-2 md:left-1/2 md:transform md:-translate-x-1/2 w-4 h-4 rounded-full border-2 ${
                     event.status === 'main-event' 
                       ? 'bg-earth-green border-earth-green shadow-glow' 
                       : 'bg-white border-earth-teal'
                   }`}></div>
                   
                   {/* Event Card */}
-                  <div className={`ml-12 md:ml-0 £{index % 2 === 0 ? 'md:pr-1/2 md:pr-8' : 'md:pl-1/2 md:pl-8'}`}>
-                    <Card className={`bg-white/90 backdrop-blur-sm border-0 shadow-card hover:shadow-earth transition-all duration-300 £{
+                  <div className={`ml-12 md:ml-0 ${index % 2 === 0 ? 'md:pr-1/2 md:pr-8' : 'md:pl-1/2 md:pl-8'}`}>
+                    <Card className={`bg-white/90 backdrop-blur-sm border-0 shadow-card hover:shadow-earth transition-all duration-300 ${
                       event.status === 'main-event' ? 'ring-2 ring-earth-green/30' : ''
                     }`}>
                       <CardContent className="p-6">
                         <div className="flex items-start gap-3">
-                          <div className={`w-10 h-10 rounded-lg flex items-center justify-center £{
+                          <div className={`w-10 h-10 rounded-lg flex items-center justify-center ${
                             event.status === 'main-event'
                               ? 'bg-gradient-hero text-white'
                               : 'bg-earth-teal/10 text-earth-teal'
@@ -101,7 +101,7 @@ const Timeline = () => {
                           </div>
                           <div className="flex-1">
                             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-2">
-                              <h3 className={`font-semibold £{
+                              <h3 className={`font-semibold ${
                                 event.status === 'main-event' ? 'text-earth-green text-lg' : 'text-foreground'
                               }`}>
                                 {event.phase} {event.title}
