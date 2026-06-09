@@ -127,7 +127,7 @@ const Navigation = () => {
                 size="sm"
                 // disabled
                 // className="opacity-60 cursor-not-allowed"
-                onClick={() => {window.open('https://forms.gle/PAFktjYsSXd4CJP2A', '_blank')}}
+                onClick={() => {window.open('https://forms.gle/mQWWXv86sdCb1bMF6', '_blank')}}
               >
                 Register Now
               </Button>
@@ -205,7 +205,7 @@ const Navigation = () => {
                     size="sm"
                     // className="w-full opacity-60 cursor-not-allowed"
                     disabled
-                    onClick={() => {window.open('https://forms.gle/PAFktjYsSXd4CJP2A', '_blank')}}
+                    onClick={() => {window.open('https://forms.gle/mQWWXv86sdCb1bMF6', '_blank')}}
                   >
                     Register Now
                   </Button>

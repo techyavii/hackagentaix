@@ -85,7 +85,7 @@ const About = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button onClick={() => window.open('https://forms.gle/84wfCEsa9aGobC2d8', '_blank')} variant="hero" size="lg">
+            <Button onClick={() => window.open('https://forms.gle/mQWWXv86sdCb1bMF6', '_blank')} variant="hero" size="lg">
               Start Your Journey
             </Button>
             <Link to="/themes">

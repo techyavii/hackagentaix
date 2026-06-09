@@ -113,7 +113,7 @@ const Hero = () => {
               size="xl" 
               disabled
               // className="min-w-48 opacity-60 cursor-not-allowed"
-              onClick={() => {window.open('https://forms.gle/PAFktjYsSXd4CJP2A', '_blank')}}
+              onClick={() => {window.open('https://forms.gle/mQWWXv86sdCb1bMF6', '_blank')}}
             >
               Register Now
             </Button>
