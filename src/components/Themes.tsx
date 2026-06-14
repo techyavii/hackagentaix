@@ -12,6 +12,7 @@ import {
 const Themes = () => {
   const themes = [
     {
+      badge: "Track 1",
       icon: <Cog className="w-8 h-8" />,
       title: "Track 1 — Autonomous Workflow Agents",
       color: "from-blue-500 to-cyan-600",
@@ -20,6 +21,7 @@ const Themes = () => {
       keyChallenge: "Build an agent that completes a full real-world workflow from goal input to final output — with zero human prompting mid-task."
     },
     {
+      badge: "Track 2",
       icon: <Handshake className="w-8 h-8" />,
       title: "Track 2 — Multi-Agent Collaboration Systems",
       color: "from-yellow-500 to-orange-600",
@@ -28,6 +30,7 @@ const Themes = () => {
       keyChallenge: "Build a system where at least 3 agents with distinct roles collaborate and produce a unified, verifiable outcome."
     },
     {
+      badge: "Track 3",
       icon: <Globe className="w-8 h-8" />,
       title: "Track 3 — Agent + Real World Integration",
       color: "from-purple-500 to-pink-600",
@@ -36,6 +39,7 @@ const Themes = () => {
       keyChallenge: "Build an agent that interacts with at least 2 live external systems or APIs and produces a real, verifiable output."
     },
     {
+      badge: "Track 4",
       icon: <Shield className="w-8 h-8" />,
       title: "Track 4 — Responsible & Trustworthy Agents",
       color: "from-indigo-500 to-purple-600",

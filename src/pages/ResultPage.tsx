@@ -1,7 +1,6 @@
 import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
 
-//changes done here
 const feedbackVideos = [
   {
     team: "HackHub",
@@ -22,59 +21,60 @@ const feedbackVideos = [
 
 const ResultsPage = () => {
   return (
-    <>
+    <div className="min-h-screen bg-background text-foreground">
       <Navigation />
 
-      <div className="min-h-screen bg-[#f4fbf7] px-6 py-32">
-        <div className="max-w-6xl mx-auto text-center">
-          {/* Header */}
-          <h1 className="text-4xl font-bold text-[#1b4332]">
-            OneEarth International Hackathon 2025
-          </h1>
-          <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-            Official results and feedback from our winning teams.
-          </p>
+      <main className="px-6 py-24 lg:px-8">
+        <div className="mx-auto flex max-w-6xl flex-col gap-16">
+          <section className="rounded-[2rem] border border-slate-200 bg-white p-10 shadow-card">
+            <div className="max-w-3xl space-y-6">
+              <p className="text-sm uppercase tracking-[0.3em] text-earth-green">Event Results</p>
+              <h1 className="text-4xl font-bold text-foreground sm:text-5xl">
+                OneEarth International Hackathon 2025
+              </h1>
+              <p className="text-lg leading-8 text-muted-foreground">
+                Official results and feedback from our winning teams.
+              </p>
+              <div>
+                <a
+                  href="https://drive.google.com/file/d/1LoA2MD_DEQ4aF4amtGTodq-WBtZiqZz4/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white shadow-card transition hover:bg-primary/90"
+                >
+                  📄 See Results (PDF)
+                </a>
+              </div>
+            </div>
+          </section>
 
-          {/* Results Button */}
-          <div className="mt-10">
-            <a
-              href="https://drive.google.com/file/d/1LoA2MD_DEQ4aF4amtGTodq-WBtZiqZz4/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#2d6a4f] text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-[#1b4332] transition"
-            >
-              📄 See Results (PDF)
-            </a>
-          </div>
+          <section className="space-y-8">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <h2 className="text-3xl font-bold text-foreground">Feedback from Winning Teams</h2>
+                <p className="text-muted-foreground mt-2">
+                  Hear from the teams who built winning autonomous AI solutions.
+                </p>
+              </div>
+            </div>
 
-          {/* Feedback Videos */}
-          <section className="mt-20">
-            <h2 className="text-2xl font-semibold text-[#1b4332] mb-8">
-              🎥 Feedback from Winning Teams
-            </h2>
-
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid gap-8 md:grid-cols-3">
               {feedbackVideos.map((video, index) => (
                 <a
                   key={index}
                   href={video.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group bg-white rounded-2xl shadow hover:shadow-lg transition p-6 text-left"
+                  className="group rounded-[2rem] border border-slate-200 bg-white p-6 shadow-card transition hover:-translate-y-1 hover:shadow-earth"
                 >
-                  {/* Thumbnail Placeholder */}
-                  <div className="h-40 bg-[#e9f5ef] rounded-xl flex items-center justify-center text-5xl group-hover:scale-105 transition">
+                  <div className="flex h-40 items-center justify-center rounded-3xl bg-earth-green/10 text-5xl text-earth-green transition group-hover:scale-105">
                     ▶️
                   </div>
-
-                  <h3 className="mt-4 text-lg font-semibold text-[#1b4332]">
-                    {video.team}
-                  </h3>
-                  <p className="text-sm text-gray-600 mt-2">
+                  <h3 className="mt-6 text-xl font-semibold text-foreground">{video.team}</h3>
+                  <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
                     {video.description}
                   </p>
-
-                  <span className="inline-block mt-4 text-[#2d6a4f] font-medium">
+                  <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-earth-green">
                     Watch Video →
                   </span>
                 </a>
@@ -82,10 +82,10 @@ const ResultsPage = () => {
             </div>
           </section>
         </div>
-      </div>
+      </main>
 
       <Footer />
-    </>
+    </div>
   );
 };
 

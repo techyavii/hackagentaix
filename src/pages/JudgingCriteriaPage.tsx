@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 
 const JudgingCriteriaPage = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background text-foreground">
       <Navigation />
       <JudgingCriteria />
       <Footer />

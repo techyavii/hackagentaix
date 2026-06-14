@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 
 const ResourcesPage = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background text-foreground">
       <Navigation />
       <Timeline />
       <Themes />

@@ -1,20 +1,16 @@
-:root {
-  /* Neon autonomous AI theme colors */
-  --primary-blue: #10CCFF;
-  --deep-blue: #3B4BEF;
-  --cyber-purple: #A049FF;
-  --cyber-magenta: #FF42B0;
-  --tech-cyan: #34F2EA;
-  
-  /* Backgrounds */
-  --bg-gradient-hero: linear-gradient(135deg, var(--primary-blue) 0%, var(--deep-blue) 45%, var(--cyber-purple) 100%);
-  --bg-gradient-main: linear-gradient(180deg, rgba(59, 75, 239, 0.12) 0%, rgba(52, 242, 234, 0.06) 100%);
-  --bg-gradient-accent: linear-gradient(90deg, var(--cyber-magenta) 0%, var(--primary-blue) 100%);
-  
-  /* Shadows */
-  --shadow-glow: 0 0 40px rgba(160, 73, 255, 0.2);
-  --shadow-card: 0 4px 20px -8px rgba(0, 0, 0, 0.1);
-  --shadow-primary: 0 10px 30px -10px rgba(160, 73, 255, 0.3);
+﻿:root {
+  --primary-blue: #4F46E5;
+  --deep-blue: #6366F1;
+  --cyber-purple: #7C3AED;
+  --cyber-magenta: #9333EA;
+  --tech-cyan: #22D3EE;
+
+  --bg-gradient-hero: linear-gradient(135deg, #EEF2FF 0%, #FFFFFF 100%);
+  --bg-gradient-main: linear-gradient(180deg, rgba(99, 102, 241, 0.08) 0%, rgba(56, 189, 248, 0.04) 100%);
+  --bg-gradient-accent: linear-gradient(90deg, #8B5CF6 0%, #3B82F6 100%);
+
+  --shadow-glow: 0 0 40px rgba(99, 102, 241, 0.18);
+  --shadow-card: 0 12px 28px -10px rgba(15, 23, 42, 0.1);
 }
 
 /* Update component styles */
@@ -28,6 +24,10 @@
 
 .bg-gradient-accent {
   background-image: var(--bg-gradient-accent);
+}
+
+.bg-soft-slate {
+  background: linear-gradient(180deg, rgba(248,250,252,1) 0%, rgba(255,255,255,1) 100%);
 }
 
 /* Update text colors */
@@ -53,7 +53,7 @@
 
 /* Card and component styles */
 .shadow-earth {
-  box-shadow: var(--shadow-primary);
+  box-shadow: var(--shadow-glow);
 }
 
 .shadow-glow {
@@ -71,19 +71,19 @@ button.btn-default, .btn-default {
 }
 
 button.btn-hero, .btn-hero {
-  background-image: var(--gradient-hero);
+  background-image: var(--bg-gradient-accent);
   color: white;
-  box-shadow: var(--shadow-primary);
+  box-shadow: var(--shadow-glow);
 }
 
 button.btn-earth, .btn-earth {
-  background-image: var(--gradient-earth);
+  background-image: linear-gradient(135deg, #6366F1, #8B5CF6);
   color: white;
   box-shadow: var(--shadow-card);
 }
 
 button.btn-accent, .btn-accent {
-  background-image: var(--gradient-accent);
+  background-image: var(--bg-gradient-accent);
   color: white;
   box-shadow: var(--shadow-card);
 }
