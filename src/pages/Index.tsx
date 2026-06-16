@@ -14,7 +14,7 @@ const Index = () => {
       <About />
       {/* <HackathonCarousel /> */}
       <Advisory />
-      {/* <Judges /> */}
+      <Judges />
       <Footer />
     </div>
   );
