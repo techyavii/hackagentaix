@@ -34,6 +34,15 @@ const Judges = () => {
   image: "/judges/SharathChandraMacha.jpeg",
   expertise: "AI/ML, Cloud Computing",
   linkedin: "https://www.linkedin.com/in/sharath-m-1b15a358"
+},
+{
+  name: "Jai Shah",
+  affiliation: "Software Engineer, Amazon Web Services",
+  location: "India",
+  image: "/judges/JaiShah.jpeg",
+  expertise: "ML, CV, AI Agents",
+  linkedin: "https://www.linkedin.com/in/jai05041994/",
+  email: "jai.s@somaiya.edu"
 }
 
 
