@@ -65,7 +65,7 @@ const Judges = () => {
 {
   name: "Bhargava Chowdary Musunuru",
   affiliation: "Principal Android Developer, Fidelity Investments",
-  location: "UK",
+  location: "USA",
   image: "/judges/BhargavaChowdaryMusunuru.jpeg",
   expertise: "Mobile AI Systems",
   linkedin: "https://www.linkedin.com/in/bhargava-musunuru/",
@@ -74,7 +74,7 @@ const Judges = () => {
 {
   name: "Maneesh Gupta",
   affiliation: "Salesforce Architect, Contractor at Eli Lilly & Co.",
-  location: "UK",
+  location: "USA",
   image: "/judges/ManeeshGupta.jpeg",
   expertise: "Salesforce, CRM, Agentic Automation",
   linkedin: "https://www.linkedin.com/in/maneesh6/",
@@ -83,7 +83,7 @@ const Judges = () => {
 {
   name: "Shreyansh Sharma",
   affiliation: "Sr. Software Developer, London Stock Exchange",
-  location: "UK",
+  location: "USA",
   image: "/judges/ShreyanshSharma.jpeg",
   expertise: "Software, AI, Big Data",
   linkedin: "https://www.linkedin.com/in/shreyansh-sharma728168/",
