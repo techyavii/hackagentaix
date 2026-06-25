@@ -14,7 +14,7 @@ const Judges = () => {
 {
   name: "Mohammed Shakeer Bandrevu",
   affiliation: "Software Developer, Tata Consulting Services",
-  location: "India",
+  location: "USA",
   image: "/judges/MohammedShakeerBandrevu.jpeg",
   expertise: "ServiceNow, Developer, Administration",
   linkedin: "https://www.linkedin.com/in/shakeer-b-857a101b6"
@@ -38,11 +38,56 @@ const Judges = () => {
 {
   name: "Jai Shah",
   affiliation: "Software Engineer, Amazon Web Services",
-  location: "India",
+  location: "USA",
   image: "/judges/JaiShah.jpeg",
   expertise: "ML, CV, AI Agents",
   linkedin: "https://www.linkedin.com/in/jai05041994/",
   email: "jai.s@somaiya.edu"
+},
+{
+  name: "Mihira Kumar Patra",
+  affiliation: "Sr Manager, PwC",
+  location: "USA",
+  image: "/judges/MihiraKumarPatra.jpeg",
+  expertise: "Data Governance, Data Quality, SAP, ERP, Cloud, Gen AI, AI, ML",
+  linkedin: "https://www.linkedin.com/in/mihirapatra/",
+  email: "mihirakumarpatra8@gmail.com"
+},
+{
+  name: "Ranjith Singhu Ganapathy",
+  affiliation: "Software Engineer – Level III, Arch Insurance",
+  location: "USA",
+  image: "/judges/RanjithSinghuGanapathy.jpeg",
+  expertise: "AI & Cloud Engineering",
+  linkedin: "https://www.linkedin.com/in/ranjithsinghu",
+  email: "ranjithsinghu@gmail.com"
+},
+{
+  name: "Bhargava Chowdary Musunuru",
+  affiliation: "Principal Android Developer, Fidelity Investments",
+  location: "UK",
+  image: "/judges/BhargavaChowdaryMusunuru.jpeg",
+  expertise: "Mobile AI Systems",
+  linkedin: "https://www.linkedin.com/in/bhargava-musunuru/",
+  email: "bhargavachowdary.musunuru@gmail.com"
+},
+{
+  name: "Maneesh Gupta",
+  affiliation: "Salesforce Architect, Contractor at Eli Lilly & Co.",
+  location: "UK",
+  image: "/judges/ManeeshGupta.jpeg",
+  expertise: "Salesforce, CRM, Agentic Automation",
+  linkedin: "https://www.linkedin.com/in/maneesh6/",
+  email: "maneesh6.gupta@gmail.com"
+},
+{
+  name: "Shreyansh Sharma",
+  affiliation: "Sr. Software Developer, London Stock Exchange",
+  location: "UK",
+  image: "/judges/ShreyanshSharma.jpeg",
+  expertise: "Software, AI, Big Data",
+  linkedin: "https://www.linkedin.com/in/shreyansh-sharma728168/",
+  email: "shrey26.sharma@gmail.com"
 }
 
 
