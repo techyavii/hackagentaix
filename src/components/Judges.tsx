@@ -106,6 +106,15 @@ const Judges = () => {
   expertise: "Software Engineering",
   linkedin: "",
   email: "ghosh166@yahoo.com"
+},
+{
+  name: "Jigneshkumar Thakkar",
+  affiliation: "Design Verification Manager, Apple",
+  location: "USA",
+  image: "/judges/JigneshkumarThakkar.png",
+  expertise: "Hardware Verification",
+  linkedin: "https://www.linkedin.com/in/jignesh-thakkar-21662413/",
+  email: "jigneshjthakkar@gmail.com"
 }
   ];
   return (
