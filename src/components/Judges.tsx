@@ -88,10 +88,25 @@ const Judges = () => {
   expertise: "Software, AI, Big Data",
   linkedin: "https://www.linkedin.com/in/shreyansh-sharma728168/",
   email: "shrey26.sharma@gmail.com"
+},
+{
+  name: "Amul Cherukuri",
+  affiliation: "Software Engineer, Amazon Robotics",
+  location: "USA",
+  image: "/judges/AmulCherukuri.jpeg",
+  expertise: "Distributed Systems, AI, Agentic Systems",
+  linkedin: "https://www.linkedin.com/in/amul-cherukuri?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+  email: "praneetamul@gmail.com"
+},
+{
+  name: "Hemanta Ghosh",
+  affiliation: "Best Buy",
+  location: "USA",
+  image: "/judges/HemantaGhosh.jpeg",
+  expertise: "Software Engineering",
+  linkedin: "",
+  email: "ghosh166@yahoo.com"
 }
-
-
-
   ];
   return (
     <section id="judges" className="py-20 bg-gradient-subtle">
