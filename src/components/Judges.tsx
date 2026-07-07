@@ -115,6 +115,15 @@ const Judges = () => {
   expertise: "Hardware Verification",
   linkedin: "https://www.linkedin.com/in/jignesh-thakkar-21662413/",
   email: "jigneshjthakkar@gmail.com"
+},
+{
+  name: "Tripatjeet Singh",
+  affiliation: "Senior Cloud Engineer, UMB Bank",
+  location: "",
+  image: "/judges/TripatjeetSingh.jpeg",
+  expertise: "Cloud Architecture, AI/ML, Banking & Fintech",
+  linkedin: "https://www.linkedin.com/in/tripatjeet-singh-7162606/",
+  email: "tripatlives@gmail.com"
 }
   ];
   return (
