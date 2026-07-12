@@ -133,6 +133,15 @@ const Judges = () => {
   expertise: "AI-driven Enterprise Systems & Modernization",
   linkedin: "https://www.linkedin.com/in/abeed-nabith",
   email: "abeed.nabith@gmail.com"
+},
+{
+  name: "Pratham Patkar",
+  affiliation: "Director of Business Systems, Society for Science & the Public",
+  location: "",
+  image: "/judges/PrathamPatkar.jpeg",
+  expertise: "Data Engineering & Governance, AI Enablement",
+  linkedin: "https://www.linkedin.com/in/prathampatkar/",
+  email: "prathamppatkar@gmail.com"
 }
   ];
   return (
