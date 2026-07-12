@@ -124,6 +124,15 @@ const Judges = () => {
   expertise: "Cloud Architecture, AI/ML, Banking & Fintech",
   linkedin: "https://www.linkedin.com/in/tripatjeet-singh-7162606/",
   email: "tripatlives@gmail.com"
+},
+{
+  name: "Muhammed Abeed Nabith",
+  affiliation: "Lead Solution Architect, MLogica, USA",
+  location: "",
+  image: "/judges/MuhammedAbeedNabith.jpeg",
+  expertise: "AI-driven Enterprise Systems & Modernization",
+  linkedin: "https://www.linkedin.com/in/abeed-nabith",
+  email: "abeed.nabith@gmail.com"
 }
   ];
   return (
