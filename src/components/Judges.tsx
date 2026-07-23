@@ -142,6 +142,15 @@ const Judges = () => {
   expertise: "Data Engineering & Governance, AI Enablement",
   linkedin: "https://www.linkedin.com/in/prathampatkar/",
   email: "prathamppatkar@gmail.com"
+},
+{
+  name: "Archaana Pattabhii",
+  affiliation: "Senior Vice President, Citi",
+  location: "United States",
+  image: "/judges/ArchaanaPattabhii.jpeg",
+  expertise: "Enterprise AI, Data Engineering, AI Governance, Cybersecurity, Cloud Computing, Enterprise Risk Management",
+  linkedin: "https://www.linkedin.com/in/archaana-pattabhii/",
+  email: ""
 }
   ];
   return (
