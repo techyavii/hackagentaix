@@ -151,6 +151,33 @@ const Judges = () => {
   expertise: "Enterprise AI, Data Engineering, AI Governance, Cybersecurity, Cloud Computing, Enterprise Risk Management",
   linkedin: "https://www.linkedin.com/in/archaana-pattabhii/",
   email: ""
+},
+{
+  name: "Mukesh Kumar Arya",
+  affiliation: "Principal Member of Technical Staff, AMD",
+  location: "India",
+  image: "/judges/MukeshKumarArya.jpeg",
+  expertise: "AI, Solution Architecture, Semiconductors",
+  linkedin: "https://www.linkedin.com/in/mukesh-arya-5413a62/",
+  email: "mukesh.arya24@gmail.com"
+},
+{
+  name: "Sai Krishna Vadlamudi",
+  affiliation: "Sr. Security Engineer, Marriott International",
+  location: "",
+  image: "/judges/SaiKrishnaVadlamudi.jpeg",
+  expertise: "Agentic AI, Data Security",
+  linkedin: "https://www.linkedin.com/in/sai-vadlamudi-5950b0107/",
+  email: "saikrishna.vadlamudi@yahoo.com"
+},
+{
+  name: "Sammip Biradar",
+  affiliation: "Staff Software Engineer, Foresight",
+  location: "",
+  image: "/judges/SammipBiradar.jpeg",
+  expertise: "Full-Stack Architecture, AI Engineering, System Design",
+  linkedin: "https://www.linkedin.com/in/sammip-biradar-5467b318b/",
+  email: "sammipbiradar8@gmail.com"
 }
   ];
   return (
