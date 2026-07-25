@@ -92,13 +92,12 @@ const ProgramSchedule = () => {
                   window.open(
                     "https://drive.google.com/file/d/1pKjxFtUTUmnz1u6ZzI6g__q24GUTIedi/view?usp=sharing",
                     "_blank"
-                  )
+                  ) 
                 }
               >
                 Day-1 Shortlisted Teams
               </Button> 
               <Button
-                disabled
                 className="w-full"
                 onClick={() => window.open("https://us06web.zoom.us/j/82159594584?pwd=IuLZbmhLZiJMslisVR4Zzir892bnDX.1", "_blank")}
               >

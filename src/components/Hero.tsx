@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
+
+
+
+    
     <section className="relative overflow-hidden bg-[radial-gradient(circle_at_top_left,_rgba(99,102,241,0.12),transparent_24%),linear-gradient(180deg,#ffffff_0%,#f8fafc_100%)] pt-28 pb-20">
       <div className="pointer-events-none absolute left-10 top-12 hidden h-40 w-40 rounded-full bg-primary/10 blur-3xl md:block"></div>
       <div className="pointer-events-none absolute right-0 top-24 h-72 w-72 rounded-full bg-accent/10 blur-3xl"></div>
