@@ -65,7 +65,6 @@ const ProgramSchedule = () => {
             </Card>
           ))}
         </div>
-
         {/* Event Days */}
         <div className="grid md:grid-cols-2 gap-8 mb-16 max-w-6xl mx-auto">
           {/* Day 1 */}
@@ -88,11 +87,10 @@ const ProgramSchedule = () => {
                 </p>
               </div>
               <Button
-                disabled
-                className="w-full py-6 mb-4 font-bold text-lg"
+                className="w-full py-6 mb-4 font-bold text-lg "
                 onClick={() =>
                   window.open(
-                    "https://docs.google.com/spreadsheets/d/1WLwjWGbQtz-LQtGVh1uRps1l3czf_bBDppU57dEWN_w/edit?usp=sharing",
+                    "https://drive.google.com/file/d/1pKjxFtUTUmnz1u6ZzI6g__q24GUTIedi/view?usp=sharing",
                     "_blank"
                   )
                 }
@@ -102,7 +100,7 @@ const ProgramSchedule = () => {
               <Button
                 disabled
                 className="w-full"
-                onClick={() => window.open("https://us06web.zoom.us/j/86789472247?pwd=qZVtAXdarO46gUKsWBbCOJQTI1sMWH.1", "_blank")}
+                onClick={() => window.open("https://us06web.zoom.us/j/82159594584?pwd=IuLZbmhLZiJMslisVR4Zzir892bnDX.1", "_blank")}
               >
                 <Video className="w-4 h-4 mr-2" />
                 Join Session
