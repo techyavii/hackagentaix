@@ -178,6 +178,26 @@ const Judges = () => {
   expertise: "Full-Stack Architecture, AI Engineering, System Design",
   linkedin: "https://www.linkedin.com/in/sammip-biradar-5467b318b/",
   email: "sammipbiradar8@gmail.com"
+},
+{
+  name: "Ajeet Deo Pandey",
+  affiliation: "Senior Project Manager, Synechron",
+  location: "India",
+  image: "/judges/AjeetDeoPandey.jpeg",
+  expertise:
+    "Regulatory Compliance, AI in Banking, Capital Markets, Credit Risk, Market Risk, Trade Lifecycle, Financial Services, Risk Management, Banking Technology, Financial Regulations",
+  linkedin: "",
+  email: "ajeetdev06@gmail.com"
+},
+{
+  name: "George Zacharia",
+  affiliation: "Independent Researcher",
+  location: "",
+  image: "/judges/GeorgeZacharia.png",
+  expertise:
+    "Artificial Intelligence, Cloud Computing, SQL, Microsoft Azure, .NET, Software Engineering",
+  linkedin: "",
+  email: "georgezacharia1983@gmail.com"
 }
   ];
   return (
