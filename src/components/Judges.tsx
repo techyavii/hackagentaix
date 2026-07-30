@@ -192,7 +192,7 @@ const Judges = () => {
 {
   name: "George Zacharia",
   affiliation: "Independent Researcher",
-  location: "",
+  location: "USA",
   image: "/judges/GeorgeZacharia.png",
   expertise:
     "Artificial Intelligence, Cloud Computing, SQL, Microsoft Azure, .NET, Software Engineering",
