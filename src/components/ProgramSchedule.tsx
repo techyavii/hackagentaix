@@ -127,11 +127,10 @@ const ProgramSchedule = () => {
                 </p>
               </div>
               <Button
-              disabled
                 className="w-full py-6 mb-4 font-bold text-lg"
                 onClick={() =>
                   window.open(
-                    "https://drive.google.com/file/d/1MeHbbrr06lEEM6e8B88MW1yhFLHqb_a-/view?usp=sharing",
+                    "https://drive.google.com/file/d/1FLKSiMHoX-Tqab-pdgtNFU69Sd8f8W3Y/view?usp=sharing",
                     "_blank"
                   )
                 }
@@ -139,9 +138,8 @@ const ProgramSchedule = () => {
                 Day-2 Shortlisted Teams
               </Button> 
               <Button
-              disabled
                 className="w-full"
-                onClick={() => window.open("https://us06web.zoom.us/j/81925476598?pwd=nezR51Wi2Z5XH0VYGmelZNEWHnZJen.1", "_blank")}
+                onClick={() => window.open("https://us06web.zoom.us/j/81761763198?pwd=jKSggNaYBVOFC35oF9hQlMCrNH3mXv.1", "_blank")}
               >
                 <Video className="w-4 h-4 mr-2" />
                 <Award className="w-4 h-4 mr-2" />
