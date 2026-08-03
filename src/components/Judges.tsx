@@ -198,6 +198,24 @@ const Judges = () => {
     "Artificial Intelligence, Cloud Computing, SQL, Microsoft Azure, .NET, Software Engineering",
   linkedin: "",
   email: "georgezacharia1983@gmail.com"
+},
+{
+  name: "Santosh Kumar Jagilinki",
+  affiliation: "Motorola Solutions",
+  location: "",
+  image: "/judges/SantoshKumarJagilinki.jpeg",
+  expertise: "AI, Salesforce, RPA",
+  linkedin: "https://www.linkedin.com/in/santosh-jagilinki-505a767?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+  email: "sanjags241@gmail.com"
+},
+{
+  name: "Kedar Rajiv Pradhan",
+  affiliation: "Netskope",
+  location: "",
+  image: "/judges/KedarRajivPradhan.jpeg",
+  expertise: "Cloud Security, AWS, GCP",
+  linkedin: "https://www.linkedin.com/in/kedar-rajiv-pradhan",
+  email: "Kedar_pradhan90@yahoo.com"
 }
   ];
   return (
